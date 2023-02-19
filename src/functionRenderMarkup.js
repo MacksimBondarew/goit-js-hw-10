@@ -26,3 +26,8 @@ function createOneCardCountry(country) {
 };
 
 export { createOneCardCountry, createListCardCountrys};
+
+function clearAllText() {
+    resultListCountrys.innerHTML = '';
+    resultOneCountry.innerHTML = '';
+};
