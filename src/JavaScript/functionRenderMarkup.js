@@ -21,7 +21,7 @@ function createOneCardCountry(country) {
     </div>
         <p class="country-card--field">Capital: <span class="country-value">${oneCountry.capital}</span></p>
         <p class="country-card--field">Population: <span class="country-value">${oneCountry.population}</span></p>
-        <p class="country-card--field">Languages: <span class="country-value">${Object.values(oneCountry.languages).join(',')}</span></p>
+        <p class="country-card--field">Languages: <span class="country-value">${Object.values(oneCountry.languages).join(', ')}</span></p>
     </div>`;
 
     resultOneCountry.innerHTML = markup;
