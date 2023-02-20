@@ -1,3 +1,5 @@
+import { resultListCountrys, resultOneCountry } from './elementsMarkup';
+
 function createListCardCountrys(countrys) {
     clearAllText();
     const countrysList = countrys.map(country => {
@@ -25,9 +27,9 @@ function createOneCardCountry(country) {
     resultOneCountry.innerHTML = markup;
 };
 
-export { createOneCardCountry, createListCardCountrys};
-
 function clearAllText() {
     resultListCountrys.innerHTML = '';
     resultOneCountry.innerHTML = '';
 };
+
+export { createOneCardCountry, createListCardCountrys, clearAllText};
